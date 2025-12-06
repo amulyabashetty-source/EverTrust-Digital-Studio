@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>PhotoGraphy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="light">
+  <div id="home">
+    <!-- navbar section -->
+    <nav  class="navbar navbar-expand-lg  fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   <img src="../source/BRAND-LOGO-1.png" alt="LuxCrest Logo" class="navbar-logo">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <!-- Left side: main nav links -->
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../ExtraFiles/portraits.html">Portrait</a>
+    </li>     
+  </ul>
+
+  <!-- Center: search -->
+  <div id="searchdiv">
+    <form class="d-flex" onsubmit="searchGallery(event)">
+      <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+
+  <!-- Right side: Contact link + dark/light toggle -->
+  <a href="#contact" class="nav-link ms-3 contact-link">Contact</a>
+
+  <div id="modeBtn" class="ms-3 d-flex align-items-center">
+    <i id="moon" class="fa-solid fa-moon"></i>
+    <i id="sun" class="fa-solid fa-sun"></i>
+  </div>
+</div>
+
+  </div>
+</nav>
+</div>
+
+ <!-- card section -->
+  <div class="container my-5">
+    <h1 class="text-center">Couple Portraits</h1>
+<p class="text-center">Beautiful portraits to celebrate your bond.</p>
+  <div class="row">
+<!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/dc/78/8c/dc788cc19fe2cd6ae66b7b08b184076d.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center"> 
+        </div>
+      </div>
+    </div>
+    
+    <!-- CARD 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/5e/95/b0/5e95b0ba89b8f9e7f08b2e09ebcfcd55.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/df/f0/85/dff0853811047eef010a539e4844e468.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4-->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/50/59/eb/5059ebf46c6775a822fcef2191eab9b7.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of second row -->
+  </div>
+<div class="container my-5">
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/72/94/ff/7294ff612662406a2a539696d579e931.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center"> 
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2-->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/f7/b2/2d/f7b22d4e7c21e83cc4826076519c7136.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">     
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/90/02/f2/9002f28166375700611085cf10c551e2.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4-->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/5d/98/83/5d9883350dbe278f7b479db453623045.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">     
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of second row -->
+  </div>
+
+
+<div class="container my-5">
+  <div class="row">
+
+    <!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/46/3e/3e/463e3e6e6abdead0af3cda80115eae88.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center">
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50 ">
+        <img src="https://i.pinimg.com/736x/ee/22/53/ee22531363566cef1b33af07269ba7e4.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">
+          </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/ae/c2/54/aec2545c089c99b3e79a5f7d905882e9.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/c8/3d/36/c83d3692b0bc4a5dfd32bb94ed5a211c.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">   
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of one row -->
+</div>
+
+
+
+<footer class="bg-dark text-light pt-5 pb-3" id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">LuxCrest Studio</h5>
+        <p>
+          We specialize in wedding, event, portrait, and fashion photography.
+          At LuxCrest, we believe in capturing emotions with elegance and perfection.
+        </p>
+        <p><strong>Luxury in Every Click</strong></p>
+      </div>
+      <!-- Quick Links -->
+<div class="col-md-4 mb-3">
+  <h5 class="text-warning">Quick Links</h5>
+  <ul class="list-unstyled">
+    <li><a href="../index.html" class="text-light text-decoration-none">Home</a></li>
+    <li><a href="./portraits.html" class="text-light text-decoration-none">Portraits</a></li>
+    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+  </ul>
+</div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">Contact Us</h5>
+        <p>📍 Hyderabad, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉ luxcreststudio@gmail.com</p>
+        <div>
+          <a href="#" class="text-light me-3">Instagram</a>
+          <a href="#" class="text-light me-3">Facebook</a>
+          <a href="#" class="text-light">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light">
+    <p class="text-center mb-0">
+      © 2025 LuxCrest Studio | All Rights Reserved
+    </p>
+  </div>
+</footer>
+<script src="../logic.js"></script>
+</body>
+</html>

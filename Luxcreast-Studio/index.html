@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>PhotoGraphy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="light">
+  <div id="home">
+    <!-- navbar section -->
+    <nav  class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   <img src="../Luxcreast-Studio/source/BRAND-LOGO-1.png" alt="LuxCrest Logo" class="navbar-logo">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <!-- Left side: main nav links -->
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./assi.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../Luxcreast-Studio/ExtraFiles/portraits.html">Portrait</a>
+    </li>     
+  </ul>
+
+  <!-- Center: search -->
+  <div id="searchdiv">
+  <form class="d-flex position-relative" onsubmit="searchGallery(event)">
+    <input id="search" class="form-control me-2" type="search" placeholder="Search photography..." autocomplete="off">
+    <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+
+    <!-- ✅ Suggestion Dropdown -->
+    <ul id="searchSuggestions" class="list-group position-absolute w-100"></ul>
+  </form>
+</div>
+
+
+  <!-- Right side: Contact link + dark/light toggle -->
+  <a href="#contact" class="nav-link ms-3 contact-link">Contact</a>
+
+  <div id="modeBtn" class="ms-3 d-flex align-items-center">
+    <i id="moon" class="fa-solid fa-moon"></i>
+    <i id="sun" class="fa-solid fa-sun"></i>
+  </div>
+</div>
+
+  </div>
+</nav>
+</div>
+<!-- carousel section -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../Luxcreast-Studio/source/wedding.png" class="d-block w-100" alt="kid">
+      <div class="carousel-caption d-none d-md-block fw">
+        <h5>Capture Your Precious Moments</h5>
+        <p>Professional photography for weddings, events, and special occasions.</p>        
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../Luxcreast-Studio/source/kid.png" class="d-block w-100" alt="kid">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Turn Moments into Memories</h5>
+        <p>High-quality portraits, family photos, and candid shots you’ll always cherish.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Luxcreast-Studio/source/shoot3.png" class="d-block w-100" alt="food">
+      <div class="carousel-caption d-none d-md-block text-light">
+        <h5>Creative, Stylish, Timeless</h5>
+        <p>From pre-wedding to fashion shoots, we create stories through our lens.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- card section -->
+<div class="container my-5">
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/47/6d/db/476ddbbaf91065f93ad0f6888e50e9dc.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Wedding Photography</h5>
+          <p class="card-text">Elegant and emotional coverage of your big day.</p>
+         <a href="./ExtraFiles/wedding.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="wedding photography" data-page="wedding.html">
+  View Gallery
+</a>
+    </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/fb/e6/fa/fbe6fab4c21a1b117ab479c3926b2b42.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pre-Wedding Shoots</h5>
+          <p class="card-text">Cinematic shoots at outdoor locations.</p>
+          <br>
+          <a href="./ExtraFiles/pre-wedding.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="pre-wedding shoots" data-page="pre-wedding.html">
+  View Gallery
+</a>
+
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/77/a6/2a/77a62abe6889e8b50f1d1f3a17fb64c9.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+          <h5 class="card-title">Candid Moments</h5>
+          <p class="card-text">Natural, unposed shots full of emotion.</p>
+          <a href="./ExtraFiles/candid.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="candid moments" data-page="candid.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/d2/30/08/d230083a49e543d15567788bb9812160.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">
+          <h5 class="card-title">Couple Portraits</h5>
+          <p class="card-text">Beautiful portraits to celebrate your bond.</p>
+          <a href="./ExtraFiles/couple.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="couple portraits" data-page="couple.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of one row -->
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/e6/ef/24/e6ef248425b91a81e0647ec0c3f743b1.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Family Portraits</h5>
+          <p class="card-text">Frame-worthy images of your loved ones.</p>
+          <a href="./ExtraFiles/family.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="family portraits" data-page="family.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/22/4b/04/224b048ce1fb04a8cfd9db3b86511435.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Baby & Kids Photography</h5>
+          <p class="card-text">Cute and fun photo sessions for little ones.</p>
+          <a href="./ExtraFiles/kids.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="baby kids photography" data-page="kids.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/fa/e8/cc/fae8cc356eac0f8baa0015c8951c6611.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fashion & Model Shoots</h5>
+          <p class="card-text">Stylish portfolio building for the models.</p>
+          <a href="./ExtraFiles/fashion.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="fashion model shoots" data-page="fashion.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/b7/9d/29/b79d293d3e8ea8c93302c2936d26bd71.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">
+          <h5 class="card-title">Event Photography</h5>
+          <p class="card-text">Birthdays, corporate events, and parties.</p>
+          <a href="./ExtraFiles/event.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="event photography" data-page="event.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of second row -->
+</div>
+<div class="container my-5">
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/2a/e9/28/2ae928c70e0160b731ef88cf8e800136.jpg" class="card-img-top" alt="Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Travel & Nature</h5>
+          <p class="card-text">Scenic landscapes and travel stories.</p>
+          <a href="./ExtraFiles/travel.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="travel nature" data-page="travel.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/36/f3/4a/36f34a59d45e3d129930d1840a934026.jpg" class="card-img-top" alt="Pre Wedding">
+        <div class="card-body text-center">
+          <h5 class="card-title">Product Photography</h5>
+          <p class="card-text">Clean, professional photos for online stores.</p>
+          <a href="./ExtraFiles/product.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="product photography" data-page="product.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/1200x/77/47/a7/7747a7288000c0f23664a0511aa51b2a.jpg" class="card-img-top" alt="Candid">
+        <div class="card-body text-center">
+          <h5 class="card-title">Studio Portraits</h5>
+          <p class="card-text">Classic indoor portraits with lighting setup.</p>
+          <a href="./ExtraFiles/studio.html" id="viewBtn" class="btn btn-dark gallery-btn"  data-title="studio photography" data-page="studio.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/6b/e5/0e/6be50eaad3f63ade68ede1c1bb8a2781.jpg" class="card-img-top" alt="Portrait">
+        <div class="card-body text-center">
+          <h5 class="card-title">Custom Concept Shoots</h5>
+          <p class="card-text">Unique themes designed just for you.</p>
+          <a href="./ExtraFiles/custom.html" id="viewBtn"class="btn btn-dark gallery-btn" data-title="custom concept shoots" data-page="custom.html">View Gallery</a>
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- End of third row -->
+</div>
+<center id ="pricing"><h1>Our Photography Packages</h1></center>
+<br>
+<table class="table table-striped table-hover ">
+  <tr class="table-secondary">
+    <th>Package Name</th>
+    <th>Duration</th>
+    <th>Photos</th>
+    <th>Deliverables</th>
+    <th>Price</th>
+  </tr>
+  <tr class="table-light">
+    <td>Basic Portrait</td>
+    <td>1 Hour</td>
+    <td>15 Photos</td>
+    <td>Soft copies via Google Drive</td>
+    <td>₹1,999</td>
+  </tr>
+  <tr class="table-primary">
+    <td>Fashion Portfolio</td>
+    <td>3-4 Hours</td>
+    <td>30 Photos</td>
+    <td>Retouched HD Soft copies</td>
+    <td>₹7,599</td>
+  </tr>
+   <tr class="table-light">
+    <td>Birthday Event</td>
+    <td>3 Hours</td>
+    <td>30+ Photos</td>
+    <td>Soft copies + Pendrive</td>
+    <td>₹5,999</td>
+  </tr>
+  <tr class="table-danger">
+    <td>Pre-Wedding Shoot</td>
+    <td>Full Day</td>
+    <td>30+ Photos</td>
+    <td>Cinematic video + Soft copies</td>
+    <td>₹24,999</td>
+  </tr>
+   <tr class="table-light">
+    <td>Couple Shoot</td>
+    <td>2 Hours</td>
+    <td>25 Photos</td>
+    <td>Soft copies + 5 Prints</td>
+    <td>₹6,999</td>
+  </tr>
+   <tr class="table-success">
+    <td>Wedding Classic</td>
+    <td>full Day</td>
+    <td>80+ Photos</td>
+    <td>Album + Pendrive</td>
+    <td>₹55,999</td>
+  </tr>
+   <tr class="table-light">
+    <td>Product Photography</td>
+    <td>2 Hours</td>
+    <td>20 Photos</td>
+    <td>Edited product images</td>
+    <td>₹4,999</td>
+  </tr>
+  <tr class="table-warning">
+    <td>Premium Wedding</td>
+    <td>Pre+ Formality+ Full day </td>
+    <td>150+ Photos</td>
+    <td>Album + Framed Photo + Pendrive</td>
+    <td>₹1,49,999</td>
+  </tr>
+</table>
+<div class="container my-5" id="reviews">
+  <h2 class="text-center mb-4">What Our Clients Say</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-5 mb-4">
+     <div class="card h-100 shadow text-center p-4">
+        <div class="card-body">
+          <h5 class="card-title">Ananya R</h5>
+          <p class="text-muted">Wedding Client</p>
+          <p class="card-text">
+            “LuxCrest Studio captured every emotion of our wedding beautifully.
+            The photos are simply magical and timeless. Truly luxury in every click!”
+          </p>
+          <p>⭐⭐⭐⭐⭐</p>
+        </div>
+      </div>
+    </div>
+        <div class="col-md-5 mb-4">
+  <div class="card h-100 shadow text-center p-4">
+        <div class="card-body">
+          <h5 class="card-title">Rahul & Sneha</h5>
+          <p class="text-muted">Pre-Wedding Shoot</p>
+          <p class="card-text">
+            “We were nervous before the shoot, but the team made us so comfortable.
+            The final output looked straight out of a movie!”
+          </p>
+          <p>⭐⭐⭐⭐⭐</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-light pt-5 pb-3" id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">LuxCrest Studio</h5>
+        <p>
+          We specialize in wedding, event, portrait, and fashion photography.
+          At LuxCrest, we believe in capturing emotions with elegance and perfection.
+        </p>
+        <p><strong>Luxury in Every Click</strong></p>
+      </div>
+      <!-- Quick Links -->
+<div class="col-md-4 mb-3">
+  <h5 class="text-warning">Quick Links</h5>
+  <ul class="list-unstyled">
+    <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+    <li><a href="./ExtraFiles/portraits.html" class="text-light text-decoration-none">Portraits</a></li>
+    <li><a href="#pricing" class="text-light text-decoration-none">Pricing</a></li>
+    <li><a href="#reviews" class="text-light text-decoration-none">Reviews</a></li>
+    <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+  </ul>
+</div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">Contact Us</h5>
+        <p>📍 Hyderabad, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉ luxcreststudio@gmail.com</p>
+        <div>
+          <a href="#" class="text-light me-3">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light">
+    <p class="text-center mb-0">
+      © 2025 LuxCrest Studio | All Rights Reserved
+    </p>
+  </div>
+</footer>
+<script src="./logic.js"></script>
+
+</body>
+</html>
