@@ -1,19 +1,26 @@
-body{
-        padding-top:70px ;
+/* ===================== GENERAL ===================== */
+body {
+  padding-top: 70px;
 }
-    .navbar-logo {
-      height: 55px;     
-      width: 150px;
-      object-fit: contain;
-    }
-    .navbar {
-      padding-top: 4px;
-      padding-bottom: 6px;
-      background-color:whitesmoke;     
-    }
-#viewBtn{
+
+/* ===================== NAVBAR ===================== */
+.navbar-logo {
+  height: 55px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.navbar {
+  padding-top: 4px;
+  padding-bottom: 6px;
+  background-color: gainsboro;
+}
+
+/* Button on cards */
+#viewBtn {
   background-color: #555;
 }
+
 /* Default navbar link color (light mode) */
 .navbar .nav-link {
   color: #000 !important;
@@ -26,13 +33,12 @@ body{
 
 /* Space between navbar links */
 .navbar-nav .nav-item {
-  margin-right: 30px;   /* you can change to 12px or 20px if you want */
+  margin-right: 30px;
 }
 
-
-/* Dark mode navbar background (you already have similar) */
+/* Dark mode navbar background */
 body.dark .navbar {
-  background-color: #0f0f0f;
+  background-color: #1d1c1c;
 }
 
 /* Dark mode navbar link color (Home, Portrait, Contact) */
@@ -41,8 +47,10 @@ body.dark .navbar .nav-link {
 }
 
 body.dark .navbar .nav-link:hover {
-  color: #d4af37 !important; /* nice gold hover */
+  color: #d4af37 !important; /* gold hover */
 }
+
+/* ===================== SEARCH BAR ===================== */
 
 #searchSuggestions {
   top: 100%;
@@ -64,43 +72,20 @@ body.dark .navbar .nav-link:hover {
   background-color: #f1f1f1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  footer a:hover {
-    color: #d4af37 !important;
-  }
-  footer a:hover {
-    color: #d4af37 !important;
-  }
-
-/* Keep your old body/nav/logo styles as is */
-
+/* center form in navbar */
 #searchdiv {
   flex: 1;
   display: flex;
-  justify-content: center;   /* centers the form in navbar */
+  justify-content: center;
 }
 
+/* search input */
 #search {
   width: 320px;
   max-width: 100%;
   border-radius: 20px;
   transition: width 0.3s ease;
-  text-align: center;        /* center text + placeholder */
+  text-align: center; /* center text + placeholder */
 }
 
 /* center placeholder text */
@@ -110,7 +95,7 @@ body.dark .navbar .nav-link:hover {
 
 #search:focus,
 #search:hover {
-  width: 480px;              /* expands, but since form is centered, it grows both sides */
+  width: 480px; /* expands both sides (form is centered) */
 }
 
 #searchbtn {
@@ -118,22 +103,8 @@ body.dark .navbar .nav-link:hover {
   margin-left: 0.5rem;
 }
 
+/* ===================== LIGHT & DARK MODE ===================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Light & Dark base */
 body.light {
   background-color: #ffffff;
   color: #111;
@@ -144,16 +115,13 @@ body.dark {
   color: #f5f5f5;
 }
 
-/* Navbar + cards + footer adjust in dark mode */
-body.dark .navbar {
-  background-color: #1f1f1f;
-}
-
+/* cards in dark mode */
 body.dark .card {
   background-color: #1e1e1e;
   color: #f5f5f5;
 }
 
+/* footer in dark mode */
 body.dark footer {
   background-color: #000;
 }
@@ -182,4 +150,77 @@ body.dark #moon {
   display: none;
 }
 
+/* ===================== FOOTER ===================== */
 
+footer {
+  background-color: #1b1e22;
+}
+
+.footer-main {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-title {
+  color: #ffc933;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-about p {
+  max-width: 330px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.footer-tagline {
+  margin-top: 10px;
+}
+
+/* spacing for links & contact text */
+.footer-links ul li + li,
+.footer-contact p + p {
+  margin-top: 6px;
+}
+
+/* ----- Logo + Instagram block (RIGHT SIDE) ----- */
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* logo & text centered together */
+  text-align: center;
+  gap: 8px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Instagram underline + hover + very small left shift */
+.insta-link {
+  color: #f1f1f1;
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 6px;
+  transform: translateX(-8px);  /* move little left, under logo */
+}
+
+.insta-link:hover {
+  color: #ffc933 !important;
+}
+
+/* copyright text */
+.footer-copy {
+  font-size: 0.9rem;
+}
+
+/* On bigger screens, keep the logo block at right side of row */
+@media (min-width: 768px) {
+  .footer-logo-col {
+    align-items: center;   /* still center under its own column */
+    text-align: center;
+  }
+}
