@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portraits</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional portraits photography by EverTrust Digital Studio in Hyderabad.">
+
+  <title>EverTrust Portraits</title>
+  <link rel="icon" type="image/png" href="../source/BRAND-LOGO-1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="light">
   <div id="home">
     <!-- navbar section -->
@@ -32,7 +37,10 @@
     </form>
   </div>
   <!-- Right side: Contact link + dark/light toggle -->
-  <a href="#contact" class="nav-link ms-3 contact-link">Contact</a>
+  <a href="#contact" class="nav-link ms-3 contact-link">
+  <i class="fa-solid fa-phone me-1"></i> Contact
+</a>
+
   <div id="modeBtn" class="ms-3 d-flex align-items-center">
     <i id="moon" class="fa-solid fa-moon"></i>
     <i id="sun" class="fa-solid fa-sun"></i>
@@ -41,283 +49,227 @@
   </div>
 </nav>
 </div>
-    <!-- card section -->
-
+   <!-- PORTRAIT GALLERY SECTION -->
 <div class="container my-5">
-  <h1 class="text-center">Portrait Photography</h1>
-<p class="text-center">Every face tells a story — we capture yours with elegance, emotion, and perfection.</p>
+  <h1 class="text-center mb-2">Portrait Photography</h1>
+  <p class="text-center mb-4">
+    Every face tells a story — we capture yours with elegance, emotion, and perfection.
+  </p>
 
-  <div class="row">
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/7c/51/75/7c517541416f73be07f72847afcad98c.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center"> 
-        </div>
-      </div>
-    </div>
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/87/6d/36/876d36e5f66f58739b35a4a927de8597.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/1b/de/e2/1bdee2c98156a6ac61e2e6a2c2200bbe.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-    <!-- CARD 4-->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/d9/86/a8/d986a83aa0746bfa8f14990b2b0e9171.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">     
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of second row -->
+  <!-- FILTER BUTTONS -->
+  <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+    <button class="btn btn-outline-dark filter-btn active" data-filter="all">All</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="kids">Kids</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="women">Women</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="men">Men</button>
   </div>
-<div class="container my-5">
-  <div class="row">
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
+
+  <!-- GALLERY GRID -->
+  <div class="row g-4">
+    <!-- KIDS -->
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
       <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/cf/dc/a7/cfdca7fc873a214f927e1c126666f0b4.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center"> 
-        </div>
+        <img src="https://i.pinimg.com/736x/7c/51/75/7c517541416f73be07f72847afcad98c.jpg"
+             class="card-img-top" alt="Kids portrait 1">
       </div>
     </div>
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
       <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/25/23/09/252309cc5b738dff275ac828f8fd1f1e.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
+        <img src="https://i.pinimg.com/736x/87/6d/36/876d36e5f66f58739b35a4a927de8597.jpg"
+             class="card-img-top" alt="Kids portrait 2">
       </div>
     </div>
-    <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
       <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/67/b1/8e/67b18e517fdb29f0a41d561ecd3b64e5.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">
-        </div>
+        <img src="https://i.pinimg.com/1200x/1b/de/e2/1bdee2c98156a6ac61e2e6a2c2200bbe.jpg"
+             class="card-img-top" alt="Kids portrait 3">
       </div>
     </div>
-    <!-- CARD 4-->
-    <div class="col-md-3 mb-4">
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
       <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/7d/8e/aa/7d8eaa687c5b2926d4078b980dee84e0.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">     
-        </div>
+        <img src="https://i.pinimg.com/736x/d9/86/a8/d986a83aa0746bfa8f14990b2b0e9171.jpg"
+             class="card-img-top" alt="Kids portrait 4">
       </div>
     </div>
-  </div> <!-- End of second row -->
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/cf/dc/a7/cfdca7fc873a214f927e1c126666f0b4.jpg"
+             class="card-img-top" alt="Kids portrait 5">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/25/23/09/252309cc5b738dff275ac828f8fd1f1e.jpg"
+             class="card-img-top" alt="Kids portrait 6">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/67/b1/8e/67b18e517fdb29f0a41d561ecd3b64e5.jpg"
+             class="card-img-top" alt="Kids portrait 7">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="kids">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/7d/8e/aa/7d8eaa687c5b2926d4078b980dee84e0.jpg"
+             class="card-img-top" alt="Kids portrait 8">
+      </div>
+    </div>
+
+    <!-- WOMEN -->
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/40/a7/7e/40a77e10b12d7b2ab04b0abae6d7e72e.jpg"
+             class="card-img-top" alt="Women portrait 1">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/ab/30/e5/ab30e54ab9cf64d4e5d7b8726e91322d.jpg"
+             class="card-img-top" alt="Women portrait 2">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/ee/41/45/ee4145a23d1d371d3d548aa5f30cc3bd.jpg"
+             class="card-img-top" alt="Women portrait 3">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/ec/f3/5f/ecf35fcf12cd91caa4838d3fa96c9da1.jpg"
+             class="card-img-top" alt="Women portrait 4">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/1d/bd/9f/1dbd9ff626ec2ab2954426c451c13f52.jpg"
+             class="card-img-top" alt="Women portrait 5">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/10/7b/bc/107bbc809308557811c1833cb0f79b01.jpg"
+             class="card-img-top" alt="Women portrait 6">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/31/b0/3a/31b03aa3ac62f6bba9b67201893415ca.jpg"
+             class="card-img-top" alt="Women portrait 7">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/dd/da/95/ddda955879a346873c4e71e337d345c7.jpg"
+             class="card-img-top" alt="Women portrait 8">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/ef/18/5a/ef185a7634ff520dae9c6adaf5f5bb95.jpg"
+             class="card-img-top" alt="Women portrait 9">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/23/05/f0/2305f00a4ce35fcbc9b87fe2a7ae711b.jpg"
+             class="card-img-top" alt="Women portrait 10">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/e6/a5/aa/e6a5aaabb5bd0727c600d79e1901e463.jpg"
+             class="card-img-top" alt="Women portrait 11">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="women">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/71/59/65/715965cb78d00fbd43e8e007a6b72529.jpg"
+             class="card-img-top" alt="Women portrait 12">
+      </div>
+    </div>
+
+    <!-- MEN -->
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/dd/ff/d5/ddffd5e4e9e217ef81b7431ec1cf9183.jpg"
+             class="card-img-top" alt="Men portrait 1">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/19/76/2d/19762d3d6c76a280942de80a795220b4.jpg"
+             class="card-img-top" alt="Men portrait 2">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/6b/8c/e2/6b8ce2ab1040e61b9ee66887a5df3707.jpg"
+             class="card-img-top" alt="Men portrait 3">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/88/75/59/887559162af595f8861e783ce655c971.jpg"
+             class="card-img-top" alt="Men portrait 4">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-100">
+        <img src="https://i.pinimg.com/736x/90/63/c5/9063c52a8f1514fd02d8301c4f617572.jpg"
+             class="card-img-top" alt="Men portrait 5">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/1200x/6d/96/91/6d96917ad66fc5ec774c2c1abbf9b7f4.jpg"
+             class="card-img-top" alt="Men portrait 6">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/e5/d5/8e/e5d58ea3ee3ca9af6e39b939527ecffc.jpg"
+             class="card-img-top" alt="Men portrait 7">
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-3 portrait-item" data-category="men">
+      <div class="card h-50">
+        <img src="https://i.pinimg.com/736x/20/8a/87/208a876d70655483110ce60a96472e74.jpg"
+             class="card-img-top" alt="Men portrait 8">
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container my-5">
-  <div class="row">
-
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/40/a7/7e/40a77e10b12d7b2ab04b0abae6d7e72e.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50 ">
-        <img src="https://i.pinimg.com/736x/ab/30/e5/ab30e54ab9cf64d4e5d7b8726e91322d.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">
-          </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/00/9b/f8/009bf85c26cc08afc54e92b24c3a93c4.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/ec/f3/5f/ecf35fcf12cd91caa4838d3fa96c9da1.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">   
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of one row -->
-</div>
-
-<div class="container my-5">
-  <div class="row">
-
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/dd/ff/d5/ddffd5e4e9e217ef81b7431ec1cf9183.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50 ">
-        <img src="https://i.pinimg.com/1200x/19/76/2d/19762d3d6c76a280942de80a795220b4.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">
-          </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/e8/c0/b0/e8c0b0984ab83e18f577bbac7691ddcc.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/88/75/59/887559162af595f8861e783ce655c971.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">   
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of one row -->
-</div>
-<div class="container my-5">
-  <div class="row">
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/1d/bd/9f/1dbd9ff626ec2ab2954426c451c13f52.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/10/7b/bc/107bbc809308557811c1833cb0f79b01.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-<!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/31/b0/3a/31b03aa3ac62f6bba9b67201893415ca.jpg
-   " class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-<!-- CARD 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/dd/da/95/ddda955879a346873c4e71e337d345c7.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-  </div> <!-- End of second row -->
-  </div>
- 
-<div class="container my-5">
-  <div class="row">
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/90/63/c5/9063c52a8f1514fd02d8301c4f617572.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center"> 
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD  -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/6d/96/91/6d96917ad66fc5ec774c2c1abbf9b7f4.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-    <!-- CARD 3-->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/e5/d5/8e/e5d58ea3ee3ca9af6e39b939527ecffc.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">     
-        </div>
-      </div>
-    </div>
-    <!-- CARD 4 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/20/8a/87/208a876d70655483110ce60a96472e74.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of second row -->
-  </div>
-
-  <div class="container my-5">
-  <div class="row">
-    <!-- CARD 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/ef/18/5a/ef185a7634ff520dae9c6adaf5f5bb95.jpg" class="card-img-top" alt="Wedding">
-        <div class="card-body text-center"> 
-        </div>
-      </div>
-    </div>
-    <!-- CARD 2 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/23/05/f0/2305f00a4ce35fcbc9b87fe2a7ae711b.jpg" class="card-img-top" alt="Candid">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/736x/e6/a5/aa/e6a5aaabb5bd0727c600d79e1901e463.jpg" class="card-img-top" alt="Portrait">
-        <div class="card-body text-center">
-        </div>
-      </div>
-    </div>
-    <!-- CARD 4-->
-    <div class="col-md-3 mb-4">
-      <div class="card h-50">
-        <img src="https://i.pinimg.com/1200x/71/59/65/715965cb78d00fbd43e8e007a6b72529.jpg" class="card-img-top" alt="Pre Wedding">
-        <div class="card-body text-center">     
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of second row -->
-  </div>
+      
+    
+   
 <footer class="bg-dark text-light pt-5 pb-3" id="contact">
   <div class="container">
     <div class="row footer-main align-items-start">
@@ -350,10 +302,15 @@
       </div>
 
       <!-- Logo + Instagram -->
-      <div class="col-md-2 footer-logo-col">
-        <img src="../source/BRAND-LOGO-1.png" alt="EverTrust Digital Studio" class="footer-logo">
-        <a href="#" class="insta-link">Instagram</a>
-      </div>
+        <div class="col-md-2 footer-logo-col">
+          <img src="../source/BRAND-LOGO-1.png" alt="EverTrust Digital Studio" class="footer-logo" loading="lazy">
+         <a href="https://www.instagram.com/evertrustdgs/"
+   class="insta-link"
+   target="_blank"
+   rel="noopener noreferrer">
+  <i class="fa-brands fa-instagram me-1"></i>evertrustdgs
+</a>
+        </div>
     </div>
 
     <hr class="border-light mt-4">
@@ -362,16 +319,58 @@
     </p>
   </div>
 </footer>
+<!-- IMAGE LIGHTBOX (FULLSCREEN) -->
+<div id="lightboxOverlay" class="lightbox-overlay">
+  <div class="lightbox-inner">
+
+    <!-- Close button -->
+    <button type="button"
+            id="lightboxClose"
+            class="lightbox-close"
+            aria-label="Close image">
+      &times;
+    </button>
+
+
+    <!-- Previous arrow -->
+    <button type="button"
+            id="lightboxPrev"
+            class="lightbox-nav lightbox-prev"
+            aria-label="Previous image">
+      &#10094;
+    </button>
+
+    <!-- Main image -->
+    <img id="lightboxImage" src="" alt="preview" />
+
+    <!-- Next arrow -->
+    <button type="button"
+            id="lightboxNext"
+            class="lightbox-nav lightbox-next"
+            aria-label="Next image">
+      &#10095;
+    </button>
+
+    <!-- Counter -->
+    <div id="lightboxCounter" class="lightbox-counter">
+      1 / 1
+    </div>
+
+  </div>
+</div>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 <script src="../logic.js"></script>
 
 
-    
-   
-    
-    
-
-    
 
 
 </body>

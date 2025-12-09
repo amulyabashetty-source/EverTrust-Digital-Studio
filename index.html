@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>PhotoGraphy</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./style.css">
+<meta name="description" content="EverTrust Digital Studio offers wedding, pre-wedding, portrait, kids, fashion, and event photography in Hyderabad.">
+
+  <title>EverTrust Studio</title>
+  <link rel="icon" type="image/png" href="../source/BRAND-LOGO-1.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="light">
   <div id="home">
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Open navigation menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <img src="./source/BRAND-LOGO-1.png" alt="LuxCrest Logo" class="navbar-logo">
@@ -37,7 +41,9 @@
             <form class="d-flex position-relative" onsubmit="searchGallery(event)">
               <input id="search" class="form-control me-2" type="search" placeholder="Search photography..."
                 autocomplete="off">
-              <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>
+              <button id="searchbtn" class="btn btn-outline-success" type="submit" aria-label="Search gallery">
+                Search
+              </button>
 
               <!-- ✅ Suggestion Dropdown -->
               <ul id="searchSuggestions" class="list-group position-absolute w-100"></ul>
@@ -46,7 +52,10 @@
 
 
           <!-- Right side: Contact link + dark/light toggle -->
-          <a href="#contact" class="nav-link ms-3 contact-link">Contact</a>
+         <a href="#contact" class="nav-link ms-3 contact-link">
+  <i class="fa-solid fa-phone me-1"></i> Contact
+</a>
+
 
           <div id="modeBtn" class="ms-3 d-flex align-items-center">
             <i id="moon" class="fa-solid fa-moon"></i>
@@ -107,14 +116,15 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/47/6d/db/476ddbbaf91065f93ad0f6888e50e9dc.jpg" class="card-img-top"
-            alt="Wedding">
+            alt="Wedding" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Wedding Photography</h5>
             <p class="card-text">Elegant and emotional coverage of your big day.</p>
-            <a href="./ExtraFiles/wedding.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/wedding.html" class="btn btn-dark gallery-btn view-btn"
               data-title="wedding photography" data-page="wedding.html">
               View Gallery
             </a>
+
           </div>
         </div>
       </div>
@@ -122,12 +132,12 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/fb/e6/fa/fbe6fab4c21a1b117ab479c3926b2b42.jpg" class="card-img-top"
-            alt="Pre Wedding">
+            alt="Pre Wedding" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Pre-Wedding Shoots</h5>
             <p class="card-text">Cinematic shoots at outdoor locations.</p>
             <br>
-            <a href="./ExtraFiles/pre-wedding.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/pre-wedding.html" class="btn btn-dark gallery-btn view-btn"
               data-title="pre-wedding shoots" data-page="pre-wedding.html">
               View Gallery
             </a>
@@ -139,11 +149,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/77/a6/2a/77a62abe6889e8b50f1d1f3a17fb64c9.jpg" class="card-img-top"
-            alt="Candid">
+            alt="Candid" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Candid Moments</h5>
             <p class="card-text">Natural, unposed shots full of emotion.</p>
-            <a href="./ExtraFiles/candid.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="candid moments"
+            <a href="./ExtraFiles/candid.html" class="btn btn-dark gallery-btn view-btn" data-title="candid moments"
               data-page="candid.html">View Gallery</a>
           </div>
         </div>
@@ -152,12 +162,12 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/d2/30/08/d230083a49e543d15567788bb9812160.jpg" class="card-img-top"
-            alt="Portrait">
+            alt="Portrait" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Couple Portraits</h5>
             <p class="card-text">Beautiful portraits to celebrate your bond.</p>
-            <a href="./ExtraFiles/couple.html" id="viewBtn" class="btn btn-dark gallery-btn"
-              data-title="couple portraits" data-page="couple.html">View Gallery</a>
+            <a href="./ExtraFiles/couple.html" class="btn btn-dark gallery-btn view-btn" data-title="couple portraits"
+              data-page="couple.html">View Gallery</a>
           </div>
         </div>
       </div>
@@ -169,12 +179,12 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/e6/ef/24/e6ef248425b91a81e0647ec0c3f743b1.jpg" class="card-img-top"
-            alt="Wedding">
+            alt="family" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Family Portraits</h5>
             <p class="card-text">Frame-worthy images of your loved ones.</p>
-            <a href="./ExtraFiles/family.html" id="viewBtn" class="btn btn-dark gallery-btn"
-              data-title="family portraits" data-page="family.html">View Gallery</a>
+            <a href="./ExtraFiles/family.html" class="btn btn-dark gallery-btn view-btn" data-title="family portraits"
+              data-page="family.html">View Gallery</a>
           </div>
         </div>
       </div>
@@ -182,11 +192,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/22/4b/04/224b048ce1fb04a8cfd9db3b86511435.jpg" class="card-img-top"
-            alt="Pre Wedding">
+            alt="kids" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Baby & Kids Photography</h5>
             <p class="card-text">Cute and fun photo sessions for little ones.</p>
-            <a href="./ExtraFiles/kids.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/kids.html" class="btn btn-dark gallery-btn view-btn"
               data-title="baby kids photography" data-page="kids.html">View Gallery</a>
           </div>
         </div>
@@ -195,11 +205,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/fa/e8/cc/fae8cc356eac0f8baa0015c8951c6611.jpg" class="card-img-top"
-            alt="Candid">
+            alt="fashion" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Fashion & Model Shoots</h5>
             <p class="card-text">Stylish portfolio building for the models.</p>
-            <a href="./ExtraFiles/fashion.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/fashion.html" class="btn btn-dark gallery-btn view-btn"
               data-title="fashion model shoots" data-page="fashion.html">View Gallery</a>
           </div>
         </div>
@@ -208,12 +218,12 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/b7/9d/29/b79d293d3e8ea8c93302c2936d26bd71.jpg" class="card-img-top"
-            alt="Portrait">
+            alt="event" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Event Photography</h5>
             <p class="card-text">Birthdays, corporate events, and parties.</p>
-            <a href="./ExtraFiles/event.html" id="viewBtn" class="btn btn-dark gallery-btn"
-              data-title="event photography" data-page="event.html">View Gallery</a>
+            <a href="./ExtraFiles/event.html" class="btn btn-dark gallery-btn view-btn" data-title="event photography"
+              data-page="event.html">View Gallery</a>
           </div>
         </div>
       </div>
@@ -225,11 +235,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/2a/e9/28/2ae928c70e0160b731ef88cf8e800136.jpg" class="card-img-top"
-            alt="Wedding">
+            alt="travel" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Travel & Nature</h5>
             <p class="card-text">Scenic landscapes and travel stories.</p>
-            <a href="./ExtraFiles/travel.html" id="viewBtn" class="btn btn-dark gallery-btn" data-title="travel nature"
+            <a href="./ExtraFiles/travel.html" class="btn btn-dark gallery-btn view-btn" data-title="travel nature"
               data-page="travel.html">View Gallery</a>
           </div>
         </div>
@@ -238,11 +248,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/36/f3/4a/36f34a59d45e3d129930d1840a934026.jpg" class="card-img-top"
-            alt="Pre Wedding">
+            alt="product" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Product Photography</h5>
             <p class="card-text">Clean, professional photos for online stores.</p>
-            <a href="./ExtraFiles/product.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/product.html" class="btn btn-dark gallery-btn view-btn"
               data-title="product photography" data-page="product.html">View Gallery</a>
           </div>
         </div>
@@ -251,12 +261,12 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/1200x/77/47/a7/7747a7288000c0f23664a0511aa51b2a.jpg" class="card-img-top"
-            alt="Candid">
+            alt="studio" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Studio Portraits</h5>
             <p class="card-text">Classic indoor portraits with lighting setup.</p>
-            <a href="./ExtraFiles/studio.html" id="viewBtn" class="btn btn-dark gallery-btn"
-              data-title="studio photography" data-page="studio.html">View Gallery</a>
+            <a href="./ExtraFiles/studio.html" class="btn btn-dark gallery-btn view-btn" data-title="studio photography"
+              data-page="studio.html">View Gallery</a>
           </div>
         </div>
       </div>
@@ -264,11 +274,11 @@
       <div class="col-md-3 mb-4">
         <div class="card h-100">
           <img src="https://i.pinimg.com/736x/6b/e5/0e/6be50eaad3f63ade68ede1c1bb8a2781.jpg" class="card-img-top"
-            alt="Portrait">
+            alt="custom" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Custom Concept Shoots</h5>
             <p class="card-text">Unique themes designed just for you.</p>
-            <a href="./ExtraFiles/custom.html" id="viewBtn" class="btn btn-dark gallery-btn"
+            <a href="./ExtraFiles/custom.html" class="btn btn-dark gallery-btn view-btn"
               data-title="custom concept shoots" data-page="custom.html">View Gallery</a>
 
           </div>
@@ -277,75 +287,84 @@
 
     </div> <!-- End of third row -->
   </div>
-  <center id="pricing">
-    <h1>Our Photography Packages</h1>
-  </center>
-  <br>
-  <table class="table table-striped table-hover ">
-    <tr class="table-secondary">
+  
+  <section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Photography Packages</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered pricing-table align-middle mb-0">
+  <thead>
+    <tr>
       <th>Package Name</th>
       <th>Duration</th>
       <th>Photos</th>
       <th>Deliverables</th>
       <th>Price</th>
     </tr>
-    <tr class="table-light">
+  </thead>
+  <tbody>
+    <tr>
       <td>Basic Portrait</td>
       <td>1 Hour</td>
       <td>15 Photos</td>
       <td>Soft copies via Google Drive</td>
       <td>₹1,999</td>
     </tr>
-    <tr class="table-primary">
+    <tr>
       <td>Fashion Portfolio</td>
-      <td>3-4 Hours</td>
+      <td>3–4 Hours</td>
       <td>30 Photos</td>
       <td>Retouched HD Soft copies</td>
       <td>₹7,599</td>
     </tr>
-    <tr class="table-light">
+    <tr>
       <td>Birthday Event</td>
       <td>3 Hours</td>
       <td>30+ Photos</td>
       <td>Soft copies + Pendrive</td>
       <td>₹5,999</td>
     </tr>
-    <tr class="table-danger">
+    <tr>
       <td>Pre-Wedding Shoot</td>
       <td>Full Day</td>
       <td>30+ Photos</td>
       <td>Cinematic video + Soft copies</td>
       <td>₹24,999</td>
     </tr>
-    <tr class="table-light">
+    <tr>
       <td>Couple Shoot</td>
       <td>2 Hours</td>
       <td>25 Photos</td>
       <td>Soft copies + 5 Prints</td>
       <td>₹6,999</td>
     </tr>
-    <tr class="table-success">
+    <tr>
       <td>Wedding Classic</td>
-      <td>full Day</td>
+      <td>Full Day</td>
       <td>80+ Photos</td>
       <td>Album + Pendrive</td>
       <td>₹55,999</td>
     </tr>
-    <tr class="table-light">
+    <tr>
       <td>Product Photography</td>
       <td>2 Hours</td>
       <td>20 Photos</td>
       <td>Edited product images</td>
       <td>₹4,999</td>
     </tr>
-    <tr class="table-warning">
+    <tr>
       <td>Premium Wedding</td>
-      <td>Pre+ Formality+ Full day </td>
+      <td>Pre + Formality + Full Day</td>
       <td>150+ Photos</td>
       <td>Album + Framed Photo + Pendrive</td>
       <td>₹1,49,999</td>
     </tr>
-  </table>
+  </tbody>
+</table>
+ </div>
+  </div>
+</section>
   <div class="container my-5" id="reviews">
     <h2 class="text-center mb-4">What Our Clients Say</h2>
     <div class="row justify-content-center">
@@ -379,56 +398,135 @@
       </div>
     </div>
   </div>
-  <footer class="bg-dark text-light pt-5 pb-3" id="contact">
+
+ <!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="py-5">
   <div class="container">
-    <div class="row footer-main align-items-start">
-      <!-- About -->
-      <div class="col-md-4 footer-about">
-        <h5 class="footer-title">EverTrust Digital Studio</h5>
-        <p>
-          We specialize in wedding, portrait, event, fashion, and travel photography.
-          At EverTrust, we blend premium quality with affordable pricing for every family.
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <h2 class="text-center mb-3">Book Your Photoshoot</h2>
+        <p class="text-center mb-4">
+          Share your details and we’ll get back to you with availability and package options.
         </p>
-        <p class="footer-tagline"><strong>Where Every Click Is Built on Trust</strong></p>
-      </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-3 footer-links">
-        <h5 class="footer-title">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
-          <li><a href="./ExtraFiles/portraits.html" class="text-light text-decoration-none">Portraits</a></li>
-          <li><a href="#pricing" class="text-light text-decoration-none">Pricing</a></li>
-          <li><a href="#reviews" class="text-light text-decoration-none">Reviews</a></li>
-          <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
+        <form id="bookingForm" class="p-4 shadow-sm rounded">
+          <!-- inline message box for JS -->
+          <div id="formMessage" class="alert d-none" role="alert"></div>
 
-      <!-- Contact -->
-      <div class="col-md-3 footer-contact">
-        <h5 class="footer-title">Contact Us</h5>
-        <p>📍 Hyderabad, India</p>
-        <p>📞 +91 98765 43210</p>
-        <p>✉ evertruststudio@gmail.com</p>
-      </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
 
-      <!-- Logo + Instagram -->
-      <div class="col-md-2 footer-logo-col">
-        <img src="./source/BRAND-LOGO-1.png" alt="EverTrust Digital Studio" class="footer-logo">
-        <a href="#" class="insta-link">Instagram</a>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone *</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="shootType" class="form-label">Shoot Type *</label>
+            <select id="shootType" name="shootType" class="form-select" required>
+              <option value="">Select type</option>
+              <option>Wedding</option>
+              <option>Pre-Wedding</option>
+              <option>Portrait / Portfolio</option>
+              <option>Kids / Family</option>
+              <option>Event / Birthday</option>
+              <option>Product / Branding</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="3" class="form-control"
+              placeholder="Preferred date, location, timing, etc."></textarea>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-dark px-4">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
-
-    <hr class="border-light mt-4">
-    <p class="text-center mb-0 footer-copy">
-      © 2025 EverTrust Digital Studio | All Rights Reserved
-    </p>
   </div>
-</footer>
+</section>
+
+  <footer class="bg-dark text-light pt-5 pb-3" id="contact">
+    <div class="container">
+      <div class="row footer-main align-items-start">
+        <!-- About -->
+        <div class="col-md-4 footer-about">
+          <h5 class="footer-title">EverTrust Digital Studio</h5>
+          <p>
+            We specialize in wedding, portrait, event, fashion, and travel photography.
+            At EverTrust, we blend premium quality with affordable pricing for every family.
+          </p>
+          <p class="footer-tagline"><strong>Where Every Click Is Built on Trust</strong></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 footer-links">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="./ExtraFiles/portraits.html" class="text-light text-decoration-none">Portraits</a></li>
+            <li><a href="#pricing" class="text-light text-decoration-none">Pricing</a></li>
+            <li><a href="#reviews" class="text-light text-decoration-none">Reviews</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3 footer-contact">
+          <h5 class="footer-title">Contact Us</h5>
+          <p>📍 Hyderabad, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉ evertruststudio@gmail.com</p>
+        </div>
+
+        <!-- Logo + Instagram -->
+        <div class="col-md-2 footer-logo-col">
+          <img src="./source/BRAND-LOGO-1.png" alt="EverTrust Digital Studio" class="footer-logo" loading="lazy">
+         <a href="https://www.instagram.com/evertrustdgs/"
+   class="insta-link"
+   target="_blank"
+   rel="noopener noreferrer">
+  <i class="fa-brands fa-instagram me-1"></i>evertrustdgs
+</a>
+        </div>
+      </div>
+
+      <hr class="border-light mt-4">
+      <p class="text-center mb-0 footer-copy">
+        © 2025 EverTrust Digital Studio | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true" aria-labelledby="imageModalLabel">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <h5 id="imageModalLabel" class="visually-hidden">Image preview</h5>
+        <div class="modal-body p-0">
+          <img id="modalImage" src="" alt="preview" class="img-fluid w-100" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Back to top button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
 
 
   <script src="./logic.js"></script>
-
 </body>
 
 </html>

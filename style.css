@@ -13,12 +13,19 @@ body {
 .navbar {
   padding-top: 4px;
   padding-bottom: 6px;
-  background-color: gainsboro;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* Button on cards */
-#viewBtn {
+.view-btn {
   background-color: #555;
+  border-color: #555;
+}
+
+.view-btn:hover {
+  background-color: #333;
+  border-color: #333;
 }
 
 /* Default navbar link color (light mode) */
@@ -150,10 +157,11 @@ body.dark #moon {
   display: none;
 }
 
-/* ===================== FOOTER ===================== */
+/* ===== FOOTER LAYOUT ===== */
 
 footer {
   background-color: #1b1e22;
+  color: #f5f5f5;
 }
 
 .footer-main {
@@ -177,17 +185,17 @@ footer {
   margin-top: 10px;
 }
 
-/* spacing for links & contact text */
+/* links & contact text */
 .footer-links ul li + li,
 .footer-contact p + p {
   margin-top: 6px;
 }
 
-/* ----- Logo + Instagram block (RIGHT SIDE) ----- */
+/* Logo + Instagram block */
 .footer-logo-col {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* logo & text centered together */
+  align-items: center;  /* center logo + text together */
   text-align: center;
   gap: 8px;
 }
@@ -198,14 +206,11 @@ footer {
   border-radius: 6px;
 }
 
-/* Instagram underline + hover + very small left shift */
+/* Instagram underline + hover */
 .insta-link {
   color: #f1f1f1;
   text-decoration: underline;
   font-weight: 500;
-  display: inline-block;
-  margin-top: 6px;
-  transform: translateX(-8px);  /* move little left, under logo */
 }
 
 .insta-link:hover {
@@ -217,10 +222,321 @@ footer {
   font-size: 0.9rem;
 }
 
-/* On bigger screens, keep the logo block at right side of row */
-@media (min-width: 768px) {
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .footer-about,
+  .footer-links,
+  .footer-contact,
   .footer-logo-col {
-    align-items: center;   /* still center under its own column */
     text-align: center;
+    margin-bottom: 20px;
   }
 }
+
+/* ========== CARD HOVER ANIMATIONS ========== */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* Filter buttons on portraits page */
+.filter-btn.active {
+  background-color: #ffc933;
+  border-color: #ffc933;
+  color: #1b1e22;
+}
+
+
+/* ================= CONTACT FORM SECTION (LIGHT + DARK) ================= */
+
+#contact-form {
+  background: #f4f5f7;
+}
+
+body.dark #contact-form {
+  background: #111111;
+}
+
+/* The form card itself */
+#bookingForm {
+  background-color: #ffffff;
+}
+
+body.dark #bookingForm {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Headings & text inside form section */
+#contact-form h2,
+#contact-form p,
+#contact-form label {
+  color: #111;
+}
+
+body.dark #contact-form h2,
+body.dark #contact-form p,
+body.dark #contact-form label {
+  color: #f5f5f5;
+}
+
+/* Inputs – light */
+#bookingForm .form-control,
+#bookingForm .form-select {
+  background-color: #ffffff;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+/* Inputs – dark */
+body.dark #bookingForm .form-control,
+body.dark #bookingForm .form-select {
+  background-color: #141414;
+  color: #f5f5f5;
+  border: 1px solid #444;
+}
+
+body.dark #bookingForm .form-control::placeholder {
+  color: #b0b0b0;
+}
+
+/* Focus states */
+#bookingForm .form-control:focus,
+#bookingForm .form-select:focus {
+  background-color: #ffffff;
+  color: #111;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+body.dark #bookingForm .form-control:focus,
+body.dark #bookingForm .form-select:focus {
+  background-color: #141414;
+  color: #f5f5f5;
+  border-color: #ffc933;
+  box-shadow: 0 0 0 0.15rem rgba(255, 201, 51, 0.25);
+}
+
+/* Submit button in dark mode */
+body.dark #bookingForm button[type="submit"] {
+  background-color: #ffc933;
+  color: #111;
+  border: none;
+}
+
+body.dark #bookingForm button[type="submit"]:hover {
+  background-color: #e6b800;
+}
+
+
+/* ====== PRICING TABLE – SIMPLE, SAME STYLE IN BOTH MODES ====== */
+
+.pricing-table {
+  font-size: 0.95rem;
+}
+
+/* header row */
+.pricing-table thead th {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Light mode */
+body.light .pricing-table {
+  background-color: #ffffff;
+  color: #111;
+  border-color: #dddddd;
+}
+
+body.light .pricing-table thead th {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+body.light .pricing-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+body.light .pricing-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Dark mode */
+body.dark .pricing-table {
+  background-color: #141414;
+  color: #f5f5f5;
+  border-color: #333333;
+}
+
+body.dark .pricing-table thead th {
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+}
+
+body.dark .pricing-table tbody tr:nth-child(odd) {
+  background-color: #181818;
+}
+
+body.dark .pricing-table tbody tr:nth-child(even) {
+  background-color: #141414;
+}
+
+/* Borders for both modes */
+.pricing-table td,
+.pricing-table th {
+  border: 1px solid inherit; /* uses table border-color above */
+}
+
+/* Disable any hover change (Bootstrap override, just in case) */
+.pricing-table tbody tr:hover {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+
+
+
+/* ================= FULLSCREEN LIGHTBOX ================= */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;                   /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;                   /* above navbar */
+}
+
+.lightbox-overlay.show {
+  display: flex;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightboxImage {
+  max-width: 90vw;      /* a little margin left/right */
+  max-height: 90vh;     /* smaller so full photo fits */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+
+/* Close button */
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Arrows */
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #ffffff;
+  font-size: 2.2rem;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-prev {
+  left: -60px;
+}
+
+.lightbox-next {
+  right: -60px;
+}
+
+.lightbox-nav:hover,
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Counter text */
+.lightbox-counter {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .lightbox-counter {
+    bottom: 10px;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  z-index: 2000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+}
+
